@@ -6,6 +6,7 @@ import { CatResolver } from './cat.resolver'
   imports: [
     MercuriusModule.forRoot({
       autoSchemaFile: true,
+      graphiql: true,
       context: (request, reply) => ({ request, reply }),
       subscription: {
         context: (request, reply) => ({ request, reply })
